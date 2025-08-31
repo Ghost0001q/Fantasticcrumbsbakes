@@ -1,0 +1,217 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: green;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.container h1{
+font-size: 50px;
+text-align:left;
+color:gold;
+}
+/* Header */
+header {
+  background-color:black;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8em;
+  color:gold;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d45d79;
+}
+
+/* Hero Section */
+.hero {
+  background: url('Bakery+Banner.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #d45d79;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #b64963;
+}
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  background-color: gray;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2.5em;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.1em;
+  color: white;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Products Section */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.product {
+  background: gray;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product:hover {
+  transform: scale(1.03);
+}
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color:none;
+  outline: none;
+}
+
+.contact-form button.btn {
+  display: inline-block;
+  background-color:gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button.btn:hover {
+  background-color: green;
+}
+
+footer {
+  background-color:black;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .product-grid {
+    flex-direction: column;
+  }
+}
