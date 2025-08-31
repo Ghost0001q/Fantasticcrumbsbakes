@@ -24,7 +24,7 @@ a {
   margin: 0 auto;
 }
 .container h1{
-font-size: 50px;
+font-size: 47px;
 text-align:left;
 color:gold;
 }
@@ -214,6 +214,13 @@ footer {
   .product-grid {
     flex-direction: column;
   }
+
+  .container h1{
+font-size: 25px;
+text-align:left;
+color:gold;
 }
+}
+
 
 
