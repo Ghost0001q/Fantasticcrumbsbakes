@@ -30,7 +30,7 @@ color:gold;
 }
 /* Header */
 header {
-  background-color:black;
+  background-color:white;
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   position: sticky;
@@ -215,3 +215,4 @@ footer {
     flex-direction: column;
   }
 }
+
